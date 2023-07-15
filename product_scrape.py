@@ -9,7 +9,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # open the browser
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(executable_path='/usr/bin/google-chrome', chrome_options=options)
+
 
 # load the webpage
 name = "Lays Salt rs 40"
