@@ -4,11 +4,13 @@ from selenium.webdriver.common.by import By
 from flask import Flask, jsonify
 
 app = Flask(__name__)
+# Replace 'path_to_chromedriver' with the actual path to chromedriver.exe
+path_to_chromedriver = './chromedriver.exe'
 
 @app.route('/scrape/<string:product>')
 def scrape(product):
     # open the browser
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome(executable_path=path_to_chromedriver)
 
     # load the webpage
     browser.get(f'https://www.daraz.pk/catalog/?q={product}')
