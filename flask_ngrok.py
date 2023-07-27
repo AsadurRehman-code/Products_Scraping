@@ -323,4 +323,4 @@ def scrape(product):
     return jsonify(results=result_list)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='3.109.3.239', port=5000))
