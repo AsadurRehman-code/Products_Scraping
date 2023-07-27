@@ -1,17 +1,9 @@
 import re
-import chromedriver_autoinstaller
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# Automatically download and install chromedriver
-#chromedriver_autoinstaller.install()
-
-# Set up ChromeOptions
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')  # Run Chrome in headless mode (without GUI)
-
-# Create the browser instance
-browser = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver', options=options)
+# open the browser
+browser = webdriver.Chrome()
 
 # load the webpage
 name = "Surf Excel Washing Powder Care - 500G"
