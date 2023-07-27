@@ -3,7 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # open the browser
-browser = webdriver.Chrome()
+chrome_driver_path = "drivers/chromedriver"
+browser = webdriver.Chrome(executable_path=chrome_driver_path)
 
 # load the webpage
 name = "Surf Excel Washing Powder Care - 500G"
