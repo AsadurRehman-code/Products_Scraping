@@ -1,14 +1,9 @@
 import re
-import chromedriver_autoinstaller  # Import the chromedriver_autoinstaller package
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# Install the appropriate chromedriver version
-chromedriver_autoinstaller.install()
-
 # open the browser
 browser = webdriver.Chrome()
-
 
 # load the webpage
 name = "Surf Excel Washing Powder Care - 500G"
