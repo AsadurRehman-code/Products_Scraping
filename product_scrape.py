@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # Automatically download and install chromedriver
-chromedriver_autoinstaller.install()
+#chromedriver_autoinstaller.install()
 
 # Set up ChromeOptions
 options = webdriver.ChromeOptions()
