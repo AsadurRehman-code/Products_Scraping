@@ -1,9 +1,10 @@
 import re
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # open the browser
-chrome_driver_path = "drivers/chromedriver"
+chrome_driver_path = os.path.join(os.path.dirname(__file__), 'chromedriver.exe')
 browser = webdriver.Chrome(executable_path=chrome_driver_path)
 
 # load the webpage
